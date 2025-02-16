@@ -2,6 +2,10 @@
 #include <string.h>
 #include <stdio.h>
 
+/*https://www.codewars.com/kata/53697be005f803751e0015aa
+6 kyu
+*/
+
 char *encode(const char *string)
 {
     char *result = malloc(strlen(string) + 1);

@@ -1,6 +1,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+/*https://www.codewars.com/kata/554e4a2f232cdd87d9000038
+7 kyu
+*/
+
 char *dna_strand(const char *dna)
 {
     int length = strlen(dna);

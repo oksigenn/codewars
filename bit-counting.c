@@ -1,5 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
+/*https://www.codewars.com/kata/526571aae218b8ee490006f4
+6 kyu
+*/
 size_t countBits(unsigned value)
 {
     int ans = 0;
