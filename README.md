@@ -1,10 +1,10 @@
-# Oksigen Codewars
+# 😎 oksigen codewars
 
-🔥 **Моя цель** – дойти до **3 kyu** на кодварс и прокачать эти чертовы алгоритмы
+🔥 **3 kyu on codewars soon**
 
-## 📊 Codewars Profile 
+## 📊 codewars profile 
 [![тык](https://www.codewars.com/users/oks1genn/badges/large)](https://www.codewars.com/users/oks1genn)  
 
-## 📍 Чекпоинты  
+## 📍 checkpoints  
 ✅ 5 kyu  
 🚀 **4 kyu**  
