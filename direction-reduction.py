@@ -1,14 +1,14 @@
+'''https://www.codewars.com/kata/550f22f4d758534c1100025a
+5 kyu
+'''
 def dir_reduc(arr):
-    if arr == ['NORTH', 'WEST', 'SOUTH', 'EAST']:
-        return arr
-    for i in arr:
-        if "NORTH" in arr and "SOUTH" in arr:
-            arr.remove("NORTH")
-            arr.remove("SOUTH")
-        if "EAST" in arr and "WEST" in arr:
-            arr.remove("EAST")
-            arr.remove("WEST")
+    opposite = {"NORTH": "SOUTH", "SOUTH": "NORTH", "EAST": "WEST", "WEST": "EAST"}
+    stack = []
 
-    return arr
+    for direction in arr:
+        if stack and stack[-1] == opposite[direction]:
+            stack.pop() 
+        else:
+            stack.append(direction)
 
-print(dir_reduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]))
+    return stack
