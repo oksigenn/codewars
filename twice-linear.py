@@ -6,16 +6,16 @@ from collections import deque
 
 def dbl_linear(n):
     u = [1]
-    Q2, Q3 = deque([3]), deque([4])
+    Q2, Q3 = [3], [4]
     
     for _ in range(n):
         next_val = min(Q2[0], Q3[0])
         u.append(next_val)
 
         if next_val == Q2[0]:
-            Q2.popleft()
+            Q2.pop(0)
         if next_val == Q3[0]:
-            Q3.popleft()
+            Q3.pop(0)
 
         Q2.append(2 * next_val + 1)
         Q3.append(3 * next_val + 1)
