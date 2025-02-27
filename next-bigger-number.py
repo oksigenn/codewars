@@ -22,3 +22,4 @@ def next_bigger(n):
     digits = digits[:i + 1] + sorted(digits[i + 1:])
     
     return int("".join(digits))
+

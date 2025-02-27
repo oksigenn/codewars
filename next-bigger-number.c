@@ -6,35 +6,39 @@
 4 kyu
 */
 
-int* create_array(long long num, int* size){
+int *create_array(long long num, int *size)
+{
     int rank = 0;
     long long tmp = num;
-    while (tmp>0)
+    while (tmp > 0)
     {
         rank++;
-        tmp/=10;
+        tmp /= 10;
     }
     *size = rank;
-    int* array = malloc(rank  * sizeof(int));
+    int *array = malloc(rank * sizeof(int));
 
     for (int i = rank - 1; i >= 0; i--)
     {
         array[i] = num % 10;
         num /= 10;
     }
-    
+
     return array;
 }
 
-int compare(const void *a, const void *b) {
-    return (*(int*)a - *(int*)b);
+int compare(const void *a, const void *b)
+{
+    return (*(int *)a - *(int *)b);
 }
 
-void sort_subarray(int* digits, int start, int size) {
+void sort_subarray(int *digits, int start, int size)
+{
     qsort(digits + start, size - start, sizeof(int), compare);
 }
 
-long long join_array(int* array, int size){
+long long join_array(int *array, int size)
+{
     long long result = 0;
     int rank = 1;
     for (int i = 0; i < size; i++)
@@ -46,13 +50,14 @@ long long join_array(int* array, int size){
     return result;
 }
 
-long long next_bigger_number(long long n) {
+long long next_bigger_number(long long n)
+{
     int size;
-    int* digits = create_array(n, &size);
+    int *digits = create_array(n, &size);
 
     int i = size - 2;
 
-    while (i>=0 && digits[i] >= digits[i+1])
+    while (i >= 0 && digits[i] >= digits[i + 1])
     {
         i--;
     }
@@ -77,7 +82,6 @@ long long next_bigger_number(long long n) {
 
     long long result = join_array(digits, size);
     free(digits);
-    
-    
+
     return result;
-    }
+}
