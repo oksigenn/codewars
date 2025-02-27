@@ -30,9 +30,3 @@ int persistence(int n){
     
     return count;
 }
-
-int main(int argc, char const *argv[])
-{
-    printf("%d\n", persistence(39));
-    return 0;
-}
