@@ -6,7 +6,7 @@
 4 kyu
 */
 
-    char *multiply(char *a, char *b)
+char *multiply(char *a, char *b)
 {
     int len1 = strlen(a);
     int len2 = strlen(b);
@@ -46,17 +46,4 @@
 
     free(result);
     return res;
-}
-
-int main()
-{
-    char a[] = "123";
-    char b[] = "456";
-    char *result = multiply(a, b);
-
-    printf("%s\n", result);
-
-    free(result);
-
-    return 0;
 }
