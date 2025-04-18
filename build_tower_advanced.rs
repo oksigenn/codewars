@@ -1,3 +1,7 @@
+/*https://www.codewars.com/kata/57675f3dedc6f728ee000256
+6 kyu
+*/
+
 fn tower_builder(floors: usize, block_size: (usize, usize)) -> Vec<String> {
     let (width, height) = block_size;
     let mut tower = Vec::new();

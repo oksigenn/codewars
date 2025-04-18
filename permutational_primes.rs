@@ -1,3 +1,7 @@
+/*https://www.codewars.com/kata/55eec0ee00ae4a8fa0000075/
+4 kyu
+*/
+
 use std::collections::HashSet;
 
 fn permutational_primes(n_max: u32, k_perms: u32) -> (u32, u32, u32) {
